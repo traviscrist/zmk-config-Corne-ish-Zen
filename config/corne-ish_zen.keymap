@@ -23,15 +23,15 @@
                 default_layer {
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | \ |
-// | BKSP |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | ESC  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ENT  |
-//                 | LMOD | SHIFT | NUM |   | SYM | SPACE  | RMOD |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | \     |
+// | BKSP |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '    |
+// | ESC  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ENTER |
+//                | LMOD | LSHIFT | NUM |   | SYM | SPACE  | RMOD |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
    &kp BSPC  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp ESC   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ENTER
-                  &mo LMOD &kp SHIFT &mo NUM   &mo SYM &kp SPACE &mo RMOD
+               &mo LMOD &kp LSHIFT &mo NUM   &mo SYM &kp SPACE &mo RMOD
                         >;
                 };
                 
