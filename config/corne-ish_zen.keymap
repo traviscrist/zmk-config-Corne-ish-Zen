@@ -37,7 +37,7 @@
                 
 
                 lmods {
-                    label = "LMOD";
+                    label = "RMOD";
                     bindings = <
         &trans &trans    &trans    &trans   &trans   &trans        &trans &trans &trans &trans &trans &trans 
         &trans &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans        &trans &trans &trans &trans &trans &trans 
@@ -47,7 +47,7 @@
                 };
 
                 rmods {
-                    label = "RMOD";
+                    label = "LMOD";
                     bindings = <
         &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
         &trans &trans &trans &trans &trans &trans        &trans &kp RGUI &kp RALT &kp RCTRL &kp RSHFT &trans 
