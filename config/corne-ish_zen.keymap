@@ -39,7 +39,7 @@
                     label = "LMOD";
                     bindings = <
         &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
-        &trans &trans &trans &trans &trans &trans        &trans &kp RGUI &kp RALT &kp RCTRL &kp RSHFT &trans 
+        &trans &trans &trans &trans &trans &trans        &trans &kp RGUI &kp RALT &kp RSHFT &kp RCTRL &trans 
         &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
                              &trans &trans &trans        &trans &trans   &trans
                     >;
@@ -49,7 +49,7 @@
                     label = "RMOD";
                     bindings = <
         &trans &trans    &trans    &trans   &trans   &trans        &trans &trans &trans &trans &trans &trans 
-        &trans &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans        &trans &trans &trans &trans &trans &trans 
+        &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &trans        &trans &trans &trans &trans &trans &trans 
         &trans &trans    &trans    &trans   &trans   &trans        &trans &trans &trans &trans &trans &trans
                                    &trans   &trans   &trans        &trans &trans &trans
                     >;
