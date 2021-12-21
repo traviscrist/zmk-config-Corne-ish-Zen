@@ -35,6 +35,15 @@
                         >;
                 };
                 
+                rmods {
+                    label = "LMOD";
+                    bindings = <
+        &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
+        &trans &trans &trans &trans &trans &trans        &trans &kp RGUI &kp RALT &kp RCTRL &kp RSHFT &trans 
+        &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
+                             &trans &trans &trans        &trans &trans   &trans
+                    >;
+                };
 
                 lmods {
                     label = "RMOD";
@@ -43,16 +52,6 @@
         &trans &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans        &trans &trans &trans &trans &trans &trans 
         &trans &trans    &trans    &trans   &trans   &trans        &trans &trans &trans &trans &trans &trans
                                    &trans   &trans   &trans        &trans &trans &trans
-                    >;
-                };
-
-                rmods {
-                    label = "LMOD";
-                    bindings = <
-        &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
-        &trans &trans &trans &trans &trans &trans        &trans &kp RGUI &kp RALT &kp RCTRL &kp RSHFT &trans 
-        &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
-                             &trans &trans &trans        &trans &trans   &trans
                     >;
                 };
 
