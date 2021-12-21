@@ -37,22 +37,22 @@
                 
 
                 lmods {
-                    label = "RMOD";
+                    label = "LMOD";
                     bindings = <
         &trans &trans    &trans    &trans   &trans   &trans        &trans &trans &trans &trans &trans &trans 
         &trans &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans        &trans &trans &trans &trans &trans &trans 
         &trans &trans    &trans    &trans   &trans   &trans        &trans &trans &trans &trans &trans &trans
-                                  &trans   &trans   &trans        &trans &trans &trans
+                                   &trans   &trans   &trans        &trans &trans &trans
                     >;
                 };
 
                 rmods {
-                    label = "LMOD";
+                    label = "RMOD";
                     bindings = <
         &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
         &trans &trans &trans &trans &trans &trans        &trans &kp RGUI &kp RALT &kp RCTRL &kp RSHFT &trans 
         &trans &trans &trans &trans &trans &trans        &trans &trans   &trans   &trans    &trans    &trans 
-                            &trans &trans &trans        &trans &trans   &trans
+                             &trans &trans &trans        &trans &trans   &trans
                     >;
                 };
 
@@ -82,7 +82,7 @@
    &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
-                                                &mo CONFIG &kp LCTL &mo NUM    &kp SPC &mo &none &kp F13
+                                                &mo CONFIG &kp LCTL &mo NUM       &kp SPC &mo &none &kp F13
                         >;
                 };
 
