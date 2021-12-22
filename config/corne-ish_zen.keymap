@@ -55,34 +55,34 @@
       // Left-hand combos
       COMBO(AT_SIGN, 2 3)
       COMBO(LEFT_BRACE, 3 4)
-      COMBO(EXCLAMATION, 2 12)
-      COMBO(HASH, 3 14)
-      COMBO(DOLLAR, 4 14)
-      COMBO(TILDE, 11 12)
-      COMBO(COLON, 12 13)
-      COMBO(LEFT_PARENTHESIS, 13 14)
-      COMBO(PERCENT, 12 22)
-      COMBO(CARET, 13 23)
-      COMBO(AMPERSAND, 14 24)
-      COMBO(GRAVE, 21 22)
-      COMBO(SEMICOLON, 22 23)
-      COMBO(LEFT_BRACKET, 23 24) 
+      COMBO(EXCLAMATION, 2 14)
+      COMBO(HASH, 3 15)
+      COMBO(DOLLAR, 4 16)
+      COMBO(TILDE, 13 14)
+      COMBO(COLON, 14 15)
+      COMBO(LEFT_PARENTHESIS, 15 16)
+      COMBO(PERCENT, 14 26)
+      COMBO(CARET, 15 27)
+      COMBO(AMPERSAND, 16 28)
+      COMBO(GRAVE, 25 26)
+      COMBO(SEMICOLON, 26 27)
+      COMBO(LEFT_BRACKET, 27 28) 
 
       // Right-hand combos
       COMBO(RIGHT_BRACE, 7 8)
       COMBO(DOUBLE_QUOTES, 8 9)
-      COMBO(EQUAL, 7 17)
-      COMBO(PIPE, 8 18)
-      COMBO(BACKSLASH, 9 19)
-      COMBO(RIGHT_PARENTHESIS, 17 18)
-      COMBO(MINUS, 18 19)
-      COMBO(PLUS, 19 20)
-      COMBO(ASTERISK, 17 27)
-      COMBO(LESS_THAN, 18 28)
-      COMBO(GREATER_THAN, 19 29)
-      COMBO(RIGHT_BRACKET, 27 28)
-      COMBO(UNDERSCORE, 28 29)
-      COMBO(QUESTION, 29 30)
+      COMBO(EQUAL, 7 19)
+      COMBO(PIPE, 8 20)
+      COMBO(BACKSLASH, 9 21)
+      COMBO(RIGHT_PARENTHESIS, 19 20)
+      COMBO(MINUS, 20 21)
+      COMBO(PLUS, 21 22)
+      COMBO(ASTERISK, 19 31)
+      COMBO(LESS_THAN, 20 32)
+      COMBO(GREATER_THAN, 21 33)
+      COMBO(RIGHT_BRACKET, 31 32)
+      COMBO(UNDERSCORE, 32 33)
+      COMBO(QUESTION, 33 34)
     };
 
     keymap {
@@ -99,7 +99,7 @@
           &kp ESC    &kp Q       &kp W       &kp E      &kp R      &kp T   &kp Y &kp U       &kp I      &kp O       &kp P          &kp BSLH
           &kp TAB    &hm LSHFT A &hm LCTRL S &hm LALT D &hm LGUI F &kp G   &kp H &hm LGUI J  &hm LALT K &hm LCTRL L &hm LSHFT SEMI &kp SQT
           &kp LSHFT  &kp Z       &kp X       &kp C      &kp V      &kp B   &kp N &kp M       &kp COMMA  &kp DOT     &kp FSLH       &kp ENTER
-                                           &kp ESC &lt NAV SPACE &kp TAB   &kp ENTER &lt NUM BSPC &kp DEL
+                                           &kp ESC &lt NAV SPACE &kp TAB   &kp ENTER &lt NUM DEL &kp BSPC
         >;
       };
 
