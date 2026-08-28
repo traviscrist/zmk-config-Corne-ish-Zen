@@ -81,14 +81,14 @@ Hold `LOWER/TAB` to enter Lower. Numbers stay in the same left-to-right columns 
 Hold `RAISE/BSPC` to enter Raise. The arrow keys use the physical H/J/K/L positions.
 
 ```text
- TRANS  DEL    INS    _      +      PGUP    NONE   NONE   NONE   BSLH   PIPE   TRANS
+ TRANS  DEL    INS    _      +      PGUP    PREVTAB NEXTTAB NONE   BSLH   PIPE   TRANS
  TRANS  HOME   END    -      =      PGDN    LEFT   DOWN   UP     RIGHT  MENU   TRANS
  TRANS  <      >      COPY   PASTE  ;       PLAY   PREV   NEXT   VOLDN  VOLUP  TRANS
 
                 CTRL/ESC   TRANS   NONE      RAISE   TRANS   TRANS
 ```
 
-Copy and Paste use macOS Command+C and Command+V so they work consistently with the existing macOS setup.
+Copy and Paste use macOS Command+C and Command+V so they work consistently with the existing macOS setup. `RAISE+Y` sends Command+Shift+[ (previous tab), while `RAISE+U` sends Command+Shift+] (next tab); both are comfortable right-hand chords.
 
 ### Function and Bluetooth
 
@@ -156,7 +156,7 @@ Before handoff:
 The following checks require user-controlled flashing and hardware:
 
 - Verify quick and held behavior for Enter, Tab, Backspace, Lower, and Raise.
-- Verify every Lower, Raise, and Function key.
+- Verify every Lower, Raise, and Function key, including one-handed previous/next tab shortcuts.
 - Pair at least two computers and switch between them repeatedly.
 - Clear and re-pair one profile, then confirm the untouched profile still reconnects.
 - Confirm reset cannot be triggered during ordinary typing or profile switching.

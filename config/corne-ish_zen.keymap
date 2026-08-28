@@ -15,9 +15,11 @@
 #define RAISE    2
 #define FUNCTION 3
 
-// macOS clipboard shortcuts.
-#define U_COPY LG(C)
-#define U_PSTE LG(V)
+// macOS shortcuts.
+#define U_COPY     LG(C)
+#define U_PSTE     LG(V)
+#define U_TAB_PREV LG(LS(LBKT))
+#define U_TAB_NEXT LG(LS(RBKT))
 
 // Mark's one-shot modifier timeout.
 &sk {
@@ -81,7 +83,7 @@
         raise_layer {
             label = "RAISE";
             bindings = <
-                &trans  &kp DEL        &kp INS           &kp UNDERSCORE  &kp PLUS   &kp PG_UP      &none     &none       &none       &kp BSLH      &kp PIPE      &trans
+                &trans  &kp DEL        &kp INS           &kp UNDERSCORE  &kp PLUS   &kp PG_UP      &kp U_TAB_PREV  &kp U_TAB_NEXT  &none       &kp BSLH      &kp PIPE      &trans
                 &trans  &kp HOME       &kp END           &kp MINUS       &kp EQUAL  &kp PG_DN      &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT     &kp K_APP     &trans
                 &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp U_COPY      &kp U_PSTE &kp SEMI       &kp C_PP  &kp C_PREV  &kp C_NEXT &kp C_VOL_DN  &kp C_VOL_UP  &trans
                                                       &mt LCTRL ESC       &trans      &none          &trans       &trans       &trans
