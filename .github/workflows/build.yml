@@ -2,6 +2,9 @@ on: [push, pull_request, workflow_dispatch]
 
 name: Build
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,9 +13,11 @@ jobs:
     name: Build
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
       - name: Cache west modules
-        uses: actions/cache@v2
+        uses: actions/cache@caa296126883cff596d87d8935842f9db880ef25 # v5
         env:
           cache-name: cache-zephyr-modules
         with:
@@ -42,19 +47,16 @@ jobs:
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 corneish_zen_left.uf2
-      - name: Archive (Corne-ish Zen Left)
-        uses: actions/upload-artifact@v2
-        with:
-          name: firmware
-          path: corneish_zen_left.uf2
       - name: West Build (Corne-ish Zen Right)
         run: west build --pristine -s zmk/app -b corne-ish_zen_right -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Corne-ish Zen Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 corneish_zen_right.uf2
-      - name: Archive (Corne-ish Zen Right)
-        uses: actions/upload-artifact@v2
+      - name: Archive firmware
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
           name: firmware
-          path: corneish_zen_right.uf2
+          path: |
+            corneish_zen_left.uf2
+            corneish_zen_right.uf2
