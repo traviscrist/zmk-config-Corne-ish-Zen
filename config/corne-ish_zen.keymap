@@ -15,6 +15,13 @@
 #define RAISE    2
 #define FUNCTION 3
 
+/ {
+    chosen {
+        zmk,matrix_transform = &default_transform;
+        // zmk,matrix_transform = &five_column_transform;
+    };
+};
+
 // macOS shortcuts.
 #define U_COPY     LG(C)
 #define U_PSTE     LG(V)
