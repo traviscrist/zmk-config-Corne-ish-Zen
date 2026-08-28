@@ -54,13 +54,13 @@ The old `COL`, `NAV`, `NUM`, and invalid `CONFIG = 4` definitions have been remo
 
 ```text
  TAB     Q     W     E     R     T       Y     U     I     O     P     DEL
- ALT     A     S     D     F     G       H     J     K     L     '     RALT
+ CAPS    A     S     D     F     G       H     J     K     L     '     RALT
  SHIFT   Z     X     C     V     B       N     M     ,     .     /     FUNC
 
                  CTRL  GUI/ENTER  LOWER/TAB   RAISE/BSPC  SPACE  SHIFT
 ```
 
-Alt, Ctrl, and Shift are sticky modifiers. `GUI/ENTER`, `LOWER/TAB`, and `RAISE/BSPC` are thumb tap-hold keys. There are no home-row modifiers.
+Right Alt, Ctrl, and Shift are sticky modifiers. The left outer home-row key is Caps Lock. `GUI/ENTER`, `LOWER/TAB`, and `RAISE/BSPC` are thumb tap-hold keys. There are no home-row modifiers.
 
 The only combo is `J+K` for Escape. It is active only on Base.
 
