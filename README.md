@@ -87,12 +87,12 @@ Hold `RAISE/BSPC` to enter Raise. The arrow keys use the physical H/J/K/L positi
 ```text
  TRANS  CMD1   CMD2   CMD3   CMD4   CMD5    PREVTAB NEXTTAB NONE   BSLH   PIPE   TRANS
  TRANS  HOME   END    -      =      PGDN    LEFT   DOWN   UP     RIGHT  MENU   TRANS
- TRANS  <      >      COPY   PASTE  ;       PLAY   PREV   NEXT   VOLDN  VOLUP  TRANS
+ TRANS  <      >      COPY   PASTE  CTRLB   PLAY   PREV   NEXT   VOLDN  VOLUP  TRANS
 
                 CTRL/ESC   TRANS   NONE      RAISE   TRANS   TRANS
 ```
 
-`RAISE+Q/W/E/R/T` sends Command+1 through Command+5 without requiring the Command thumb key. Copy and Paste use macOS Command+C and Command+V so they work consistently with the existing macOS setup. `RAISE+Y` sends Command+Shift+[ (previous tab), while `RAISE+U` sends Command+Shift+] (next tab); both are comfortable right-hand chords.
+`RAISE+Q/W/E/R/T` sends Command+1 through Command+5 without requiring the Command thumb key. Copy and Paste use macOS Command+C and Command+V so they work consistently with the existing macOS setup. `RAISE+B` sends Control+B, matching Caps+B on the Mac keyboard navigation layer. `RAISE+Y` sends Command+Shift+[ (previous tab), while `RAISE+U` sends Command+Shift+] (next tab); both are comfortable right-hand chords.
 
 ### Function and Bluetooth
 
@@ -160,7 +160,7 @@ Before handoff:
 The following checks require user-controlled flashing and hardware:
 
 - Verify quick and held behavior for Enter, Tab, Backspace, Lower, and Raise.
-- Verify every Lower, Raise, and Function key, including Command+1 through Command+5 and one-handed previous/next tab shortcuts.
+- Verify every Lower, Raise, and Function key, including Command+1 through Command+5, Raise+B as Control+B, and one-handed previous/next tab shortcuts.
 - Pair at least two computers and switch between them repeatedly.
 - Clear and re-pair one profile, then confirm the untouched profile still reconnects.
 - Confirm reset cannot be triggered during ordinary typing or profile switching.
